@@ -1,0 +1,50 @@
+.about {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__tittle {
+    margin-bottom: 50px;
+
+    @include font(700, 36px, 1.16, 0.03em);
+    text-align: center;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $alt-text-color;
+  }
+
+  &__overlay {
+    display: flex;
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    top: calc(100% - 70px);
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(47, 48, 58, 0.8);
+  }
+}

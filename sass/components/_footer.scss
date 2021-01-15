@@ -1,0 +1,41 @@
+.footer {
+  background-color: $banner-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+
+    width: 1200px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0px;
+    text-decoration: none;
+  }
+
+  &__join-field {
+    margin-left: 70px;
+    width: 206px;
+    height: 80px;
+  }
+  &__text {
+    margin-bottom: 20px;
+
+    @include font(700, 14px, 1.14, 0.03em);
+    color: $alt-text-color;
+    text-transform: uppercase;
+  }
+
+  &__subscribe-field {
+    margin-left: 93px;
+    width: 570px;
+  }
+}

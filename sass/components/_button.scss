@@ -1,0 +1,30 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+  border: 0;
+
+  color: $alt-text-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  @include font(700, 16px, 1.87, 0.06em);
+
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &__icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+
+    fill: currentColor;
+  }
+}

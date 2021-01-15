@@ -1,0 +1,42 @@
+.banner {
+  text-align: center;
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: $safe-background-color;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/bgc.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__title {
+    width: 696px;
+    height: 120px;
+
+    margin-bottom: 30px;
+    color: $alt-text-color;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include font(900, 44px, 1.36, 0.06em);
+
+    text-transform: uppercase;
+  }
+
+  &__button {
+    display: inline-block;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+}

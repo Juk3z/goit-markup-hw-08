@@ -1,0 +1,20 @@
+.logo {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  @include font(700, 26px, 1.19, 0.03em);
+  font-family: $logo-font;
+
+  &__web {
+    color: $accent-color;
+  }
+
+  &__studio {
+    color: #000000;
+
+    &--white {
+      color: $alt-text-color;
+    }
+  }
+}
