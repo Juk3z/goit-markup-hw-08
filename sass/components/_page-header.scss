@@ -2,18 +2,14 @@
   border-bottom: 1px solid #ececec;
 
   &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     padding: 0 15px;
   }
-
+}
+// for tablet //
+.header {
   &__contacts {
-    display: flex;
-    align-items: center;
+    display: none;
   }
 
   &__item:not(:first-child) {

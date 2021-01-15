@@ -1,8 +1,6 @@
 .team {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
   color: $main-text-color;
 
   &__tittle {
@@ -17,7 +15,6 @@
   }
 
   &__list {
-    display: flex;
     text-align: center;
   }
 
@@ -27,18 +24,18 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
   }
 
   &__discription {
     padding: 30px 30px;
   }
 
-  &__photo {
-    max-width: 270px;
-  }
+  // &__photo {
+  //   max-width: 270px;
+  // }
 
   &__name {
     margin-bottom: 10px;

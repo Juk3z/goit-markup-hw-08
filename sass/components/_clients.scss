@@ -1,8 +1,6 @@
 .clients {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
 
   &__tittle {
     margin-bottom: 50px;
@@ -17,17 +15,23 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     /* justify-content: space-between; */
   }
 
   &__item {
     display: flex;
-    width: 170px;
+    margin-bottom: 30px;
+    width: calc(100% / 2 - 30px);
     height: 90px;
 
-    &:not(:last-child) {
+    &:nth-child(2n + 1) {
       margin-right: 30px;
     }
+
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
   }
   &__link {
     display: flex;

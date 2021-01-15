@@ -1,5 +1,5 @@
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
 
   &-nopadding {
     padding: 0;
@@ -7,11 +7,15 @@
 
   &-top-padding {
     padding: 0;
-    padding-top: 94px;
+    padding-top: 60px;
   }
 
   &-bottom-padding {
     padding: 0;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+  }
+
+  &--about {
+    display: none;
   }
 }

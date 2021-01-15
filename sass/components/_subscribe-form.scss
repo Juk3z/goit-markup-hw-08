@@ -1,16 +1,18 @@
 .subscribe {
-  display: flex;
+  // display: flex;
 
   &__button {
-    margin-left: 12px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .subscribe__input {
     background: transparent;
     display: block;
     padding: 16px 15px;
+    margin-bottom: 20px;
 
-    width: 358px;
+    width: 100%;
     height: 50px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);

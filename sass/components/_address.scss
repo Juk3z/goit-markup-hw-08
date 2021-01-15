@@ -2,17 +2,18 @@
   @include font(400, 14px, 1.71, 0.03em);
   font-style: normal;
   color: $alt-text-color;
+  margin-bottom: 60px;
 
   &__link {
     display: block;
     color: rgba(255, 255, 255, 0.6);
 
     &:not(:last-child) {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
     }
   }
 
   &__text {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 }
