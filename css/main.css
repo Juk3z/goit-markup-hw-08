@@ -575,7 +575,7 @@ section:nth-child(2n + 4) {
 }
 
 .header__container {
-  position: relative;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,6 +587,7 @@ section:nth-child(2n + 4) {
           justify-content: space-between;
   width: 100%;
   padding: 0 15px;
+  background-color: #ffffff;
 }
 
 .header__menu-button {
