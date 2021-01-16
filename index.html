@@ -14,33 +14,40 @@
     <!--Шапка сайта-->
         <header class="header">
             <div class="header__container">
-                <nav class="nav">
-                    <a class="logo" href="./index.html"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
-        
-                    <ul class="list nav__menu">
-                        <li class="nav__item"><a class="nav__link nav__link--current-page" href="./index.html">Студия</a></li>
-                        <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
-                        <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
-                    </ul>
-                </nav>
-        
-                <ul class="list header__contacts">
-                    <li class="header__item">
-                        <a class="header__link" href="mailto:info@devstudio.com">
-                            <svg class="header__icon header__icon--mail">
-                                <use href="./images/svg/symbol-defs.svg#mail"></use>
-                            </svg>info@devstudio.com
-                        </a>
-                    </li>
+                <a class="logo" href="./index.html"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
+                <button class="header__menu-button" type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                    <svg width="40px" height="40px">
+                        <use class="header__menu-icon" href="./images/svg/symbol-defs.svg#mobile-menu"></use>
+                        <use class="header__menu-close" href="./images/svg/symbol-defs.svg#mobile-menu-close"></use>
+                    </svg>
+                </button>
+                <div class="header__menu-container" id="menu-container" data-menu>
+                    <nav class="nav">
+                        <ul class="list nav__menu">
+                            <li class="nav__item"><a class="nav__link nav__link--current-page" href="./index.html">Студия</a></li>
+                            <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
+                            <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+            
+                    <ul class="list header__contacts">
+                        <li class="header__item">
+                            <a class="header__link" href="mailto:info@devstudio.com">
+                                <svg class="header__icon header__icon--mail">
+                                    <use href="./images/svg/symbol-defs.svg#mail"></use>
+                                </svg>info@devstudio.com
+                            </a>
+                        </li>
 
-                    <li class="header__item">
-                        <a class="header__link" href="tel:+380961111111">
-                            <svg class="header__icon header__icon--smartphone">
-                                <use href="./images/svg/symbol-defs.svg#smartphone"></use>
-                            </svg>+38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
+                        <li class="header__item">
+                            <a class="header__link" href="tel:+380961111111">
+                                <svg class="header__icon header__icon--smartphone">
+                                    <use href="./images/svg/symbol-defs.svg#smartphone"></use>
+                                </svg>+38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
 <!--Основной контент-->
@@ -443,5 +450,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
