@@ -22,7 +22,7 @@
   &__item {
     display: flex;
     margin-bottom: 30px;
-    width: calc(100% / 2 - 30px);
+    width: calc(100% / 2 - 15px);
     height: 90px;
 
     &:nth-child(2n + 1) {

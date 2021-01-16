@@ -1,16 +1,17 @@
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
+  // transform: translate(-50%, -50%) scale(0.9);
+  transform: scale(0.9);
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  position: relative;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%) scale(1);
   padding: 40px;
 
-  min-width: 530px;
-  min-height: 580px;
+  // min-width: 530px;
+  // min-height: 580px;
 
   background-color: $main-background-color;
 
@@ -142,16 +143,15 @@
   }
 
   &__accept-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 
     &::before {
       content: '';
+      display: inline-block;
       margin-right: 7px;
+      vertical-align: middle;
       width: 16px;
       height: 15px;
       border: 2px solid black;
@@ -172,7 +172,7 @@
     color: $accent-color;
     text-decoration: underline;
 
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
