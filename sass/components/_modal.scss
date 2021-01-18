@@ -1,17 +1,10 @@
 .backdrop.is-hidden .modal {
-  // transform: translate(-50%, -50%) scale(0.9);
   transform: scale(0.9);
 }
 
 .modal {
   position: relative;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-
-  // min-width: 530px;
-  // min-height: 580px;
 
   background-color: $main-background-color;
 
@@ -180,5 +173,18 @@
   &__button {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+
+  .modal {
+    max-width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }

@@ -2,10 +2,6 @@
   width: 100%;
   padding: 0 15px;
 
-  // &__list {
-  //   display: flex;
-  // }
-
   &__text {
     color: $secondary-text-color;
     font-size: 14px;
@@ -71,9 +67,18 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+  }
+}
 
-    // &:not(:first-child) {
-    //   margin-left: 30px;
-    // }
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .principles__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .principles__item {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
   }
 }

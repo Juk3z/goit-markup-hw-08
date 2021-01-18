@@ -6,7 +6,7 @@
     margin-right: auto;
   }
 
-  .subscribe__input {
+  &__input {
     background: transparent;
     display: block;
     padding: 16px 15px;
@@ -28,5 +28,13 @@
       outline: 0;
       border-color: $accent-color;
     }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .subscribe {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
