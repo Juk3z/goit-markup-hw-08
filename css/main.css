@@ -1162,6 +1162,8 @@ section:nth-child(2n + 4) {
 
 .footer__join-field {
   height: 80px;
+  -ms-flex-preferred-size: 206px;
+      flex-basis: 206px;
 }
 
 .footer__text {
