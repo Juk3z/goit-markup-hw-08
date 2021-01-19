@@ -41,6 +41,9 @@
 @media screen and (min-width: 1200px) {
   .banner {
     max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
   }
 
   .banner__title {
