@@ -70,7 +70,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .principles__list {
     display: flex;
     flex-wrap: wrap;
@@ -80,5 +80,28 @@
   .principles__item {
     margin: 15px;
     width: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .principles {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .principles__list {
+    display: flex;
+    margin: -15px;
+  }
+
+  .principles__item {
+    margin: 15px;
+    width: calc((100% - 120px) / 4);
+  }
+
+  .principles__tittle {
+    text-align: left;
+    font-size: 16px;
   }
 }
