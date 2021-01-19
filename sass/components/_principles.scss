@@ -70,6 +70,12 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .principles__item {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .principles__list {
     display: flex;

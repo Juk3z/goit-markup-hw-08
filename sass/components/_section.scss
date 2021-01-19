@@ -17,6 +17,7 @@
 
   &--none {
     display: none;
+    padding: 0;
   }
 }
 
@@ -36,5 +37,6 @@
 
   .section--none {
     display: block;
+    padding-bottom: 94px;
   }
 }

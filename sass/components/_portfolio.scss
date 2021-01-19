@@ -58,12 +58,6 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
-    .portfolio__menu-item {
-      margin-bottom: 30px;
-    }
-  }
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     .portfolio__cards {
       display: flex;
@@ -74,6 +68,25 @@
     .portfolio__cards-item {
       margin: 15px;
       width: calc((100% - 60px) / 2);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .portfolio__menu {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .portfolio__cards {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
+    .portfolio__cards-item {
+      margin: 15px;
+      width: calc((100% - 90px) / 3);
     }
   }
 
