@@ -44,8 +44,9 @@
   }
 
   &__tittle {
-    @include font(700, 20px, 1.15, 0.03em);
+    @include font(700, 20px, 1.5, 0.03em);
     margin-bottom: 12px;
+    text-align: center;
   }
 
   &__label {
@@ -65,6 +66,7 @@
 
   &__input {
     width: 100%;
+    height: 40px;
     padding: 11px 12px;
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -137,7 +139,7 @@
 
   &__accept-text {
     font-size: 12px;
-    line-height: 1.71;
+    line-height: 1.16;
     letter-spacing: 0.03em;
 
     &::before {
@@ -166,7 +168,7 @@
     text-decoration: underline;
 
     font-size: 12px;
-    line-height: 1.71;
+    line-height: 1.16;
     letter-spacing: 0.03em;
   }
 
@@ -182,9 +184,30 @@
   }
 
   .modal {
-    max-width: 450px;
+    position: absolute;
+    width: 450px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+  }
+
+  .modal__tittle {
+    line-height: 1.15;
+  }
+
+  .modal__accept-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  .modal__accept-link {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
