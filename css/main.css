@@ -924,7 +924,6 @@ section:nth-child(2n + 4) {
 }
 
 .principles__tittle {
-  text-align: center;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -984,6 +983,9 @@ section:nth-child(2n + 4) {
 @media screen and (max-width: 767px) {
   .principles__item {
     margin-bottom: 30px;
+  }
+  .principles__tittle {
+    text-align: center;
   }
 }
 
