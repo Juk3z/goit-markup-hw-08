@@ -392,6 +392,12 @@ section:nth-child(2n + 4) {
   pointer-events: none;
 }
 
+@media screen and (min-width: 768px) {
+  .backdrop {
+    padding: 208px 15px;
+  }
+}
+
 .backdrop.is-hidden .modal {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
@@ -401,10 +407,6 @@ section:nth-child(2n + 4) {
   position: relative;
   padding: 40px;
   background-color: #ffffff;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__close {
@@ -578,23 +580,30 @@ section:nth-child(2n + 4) {
 }
 
 @media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .backdrop.is-hidden .modal {
     -webkit-transform: translate(-50%, -50%) scale(0.9);
             transform: translate(-50%, -50%) scale(0.9);
   }
   .modal {
     position: absolute;
-    width: 450px;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .modal {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     min-width: 528px;
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .modal__tittle {
     line-height: 1.15;
