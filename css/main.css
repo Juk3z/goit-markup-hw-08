@@ -11,7 +11,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   body {
     padding-top: 80px;
   }
@@ -691,7 +691,7 @@ section:nth-child(2n + 4) {
 
 @media screen and (min-width: 1200px) {
   .nav__link {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -745,14 +745,15 @@ section:nth-child(2n + 4) {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
 
 .header__container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
