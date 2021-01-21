@@ -1171,6 +1171,10 @@ section:nth-child(2n + 4) {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team__photo {
+  width: 100%;
+}
+
 .team__discription {
   padding: 30px 30px;
 }
