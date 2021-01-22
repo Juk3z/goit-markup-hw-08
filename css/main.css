@@ -377,7 +377,6 @@ section:nth-child(2n + 4) {
   position: fixed;
   left: 0;
   top: 0;
-  padding: 93px 15px;
   z-index: 2;
   overflow-y: scroll;
   width: 100%;
@@ -393,9 +392,9 @@ section:nth-child(2n + 4) {
   pointer-events: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .backdrop {
-    padding: 208px 15px;
+    padding: 93px 15px;
   }
 }
 
@@ -587,6 +586,7 @@ section:nth-child(2n + 4) {
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
+    top: 208px;
     margin-left: auto;
     margin-right: auto;
   }
