@@ -570,6 +570,10 @@ section:nth-child(2n + 4) {
   background-size: contain;
 }
 
+.modal__input-accept:focus + .modal__accept-text::before {
+  border-color: #2196f3;
+}
+
 .modal__accept-link {
   color: #2196f3;
   text-decoration: underline;

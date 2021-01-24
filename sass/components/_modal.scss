@@ -161,6 +161,10 @@
       background-position: center;
       background-size: contain;
     }
+
+    .modal__input-accept:focus + &::before {
+      border-color: $accent-color;
+    }
   }
 
   &__accept-link {
